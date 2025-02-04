@@ -18,9 +18,6 @@ sudo apt install zsh -y
 # Install Starship
 curl -sS https://starship.rs/install.sh | sh
 
-# Setup Pyenv
-curl https://pyenv.run | bash
-
 sudo apt update 
 sudo apt install build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev curl git \
@@ -71,11 +68,6 @@ source ~/.zshrc
 chsh -s $(which zsh)
 
 echo -e "\e[32mPlease enter your sudo password:\e[0m"
-
-# Install Python versions
-pyenv install 3.10
-pyenv install 3.11
-pyenv install 3.12
 
 # Install latest NODE version
 nvm install node
