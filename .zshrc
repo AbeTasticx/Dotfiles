@@ -8,5 +8,15 @@ alias zshrc="vim ~/.zshrc"
 alias szsh="source ~/.zshrc"
 alias rdp='f() {mstsc.exe /v:$1};f'
 alias open="wsl-open"
+alias vim="nvim"
+
+mkdircd() {
+  mkdir -p "$1" && cd "$1"
+}
+
+cd() {
+  builtin cd "$@" && ll
+}
+
 
 eval "$(starship init zsh)"
