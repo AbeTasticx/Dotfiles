@@ -2,7 +2,7 @@
 clear && myfetch -c 8 -C " █"
 eval "$(starship init bash)"
 [[ $- != *i* ]] && return
-alias lsd='eza --icons'
+alias ls='eza --icons'
 alias pacup='sudo pacman -Rns $(pacman -Qdtq)'
 alias grep='grep --color=auto'
 alias pool='clear && asciiquarium'
@@ -17,6 +17,8 @@ alias Settings="cd ~/.config/hypr && nvim"
 alias spot="ncspot"
 alias untar="tar -xf"
 alias n="nvim"
+alias vim="nvim"
+alias ll="ls -al"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 PS1='[\u@\h \W]\$ '
