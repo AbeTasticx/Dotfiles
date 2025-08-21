@@ -11,7 +11,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
-vim.cmd("set number")
+vim.cmd("set relativenumber")
 require("vim-options")
+require("keymaps")
 require("lazy").setup("plugins")
 vim.opt.termguicolors = true
